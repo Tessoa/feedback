@@ -1,0 +1,45 @@
+name: ✨ Feature request / 功能建议
+description: A new feature, or an improvement to an existing one
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please [search the existing issues](https://github.com/Tessoa/feedback/issues?q=is%3Aissue) first — if someone already asked for it, a 👍 there counts for more than a new thread.
+
+        请先[搜一遍已有 Issue](https://github.com/Tessoa/feedback/issues?q=is%3Aissue)；同一个想法已经有人提过的话，去那条下面 👍 更有用。
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you hitting / 你想解决什么问题
+      description: Describe the situation before the solution — knowing the problem, we can sometimes offer a better answer than the one you had in mind.
+      placeholder: Tidying up my downloads folder means renaming dozens of files one by one.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you'd like / 你期望的做法
+      placeholder: Select several files and rename them all by a pattern.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround / 目前你是怎么绕过去的
+      description: Another tool? By hand? Or you just gave up on it?
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: tessoa version / 版本
+      description: Command palette → About → Version. 命令面板「关于 → 版本」。
+      placeholder: "0.15.0"
+    validations:
+      required: false

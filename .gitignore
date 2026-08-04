@@ -1,0 +1,8 @@
+# 编辑器 / 本机环境（本仓库只存 issue 模板与说明，不需要任何本地配置入库）
+.vscode/
+.idea/
+
+# 系统垃圾文件
+.DS_Store
+Thumbs.db
+desktop.ini

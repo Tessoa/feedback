@@ -1,0 +1,28 @@
+name: 💬 Question / 使用问题
+description: Where a feature lives, what a setting does, anything the docs left unclear
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question / 你的问题
+      placeholder: I want tessoa to start with the system but found no switch in the settings — am I looking in the wrong place?
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you already tried / 你已经试过什么
+      description: Which menus you went through, what you searched for — this also tells us where the docs fall short.
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: tessoa version / 版本
+      placeholder: "0.15.0"
+    validations:
+      required: false

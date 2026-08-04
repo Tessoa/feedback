@@ -1,0 +1,89 @@
+name: 🐞 Bug report / Bug 反馈
+description: Crashes, errors, visual glitches, anything not behaving as expected
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please [search the existing issues](https://github.com/Tessoa/feedback/issues?q=is%3Aissue) first, closed ones included.
+        Issues are visible to everyone — keep license keys, passwords and private paths out of them.
+
+        提交前请先[搜一遍已有 Issue](https://github.com/Tessoa/feedback/issues?q=is%3Aissue)（含已关闭的）。Issue 对所有人可见，请勿贴出许可证码、密码与隐私路径。
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened / 出了什么问题
+      description: One or two sentences. Screenshots or a short screen recording beat any description — just drag them in.
+      placeholder: The window freezes for a few seconds after opening a folder, then closes itself.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      description: The more specific, the better. A bug we can reproduce is a bug we can fix.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / 期望的结果
+      placeholder: The folder contents should just be listed.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: tessoa version / 版本
+      description: Command palette → About → Version. 命令面板「关于 → 版本」。
+      placeholder: "0.15.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS / 操作系统
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version / 系统版本
+      description: e.g. Windows 11 24H2, macOS 15.3 (Apple Silicon), Ubuntu 24.04.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often / 出现频率
+      options:
+        - Always / 每次都出现
+        - Often / 经常出现
+        - Sometimes / 偶尔出现
+        - Happened once / 只出现过一次
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else / 其他信息
+      description: Error text, log excerpts, or anything unusual about this machine — multiple monitors, display scaling, network drives, antivirus.
+    validations:
+      required: false
