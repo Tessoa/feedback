@@ -1,7 +1,3 @@
-name: 💬 Question / 使用问题
-description: Where a feature lives, what a setting does, anything the docs left unclear
-title: "[Question] "
-labels: ["question"]
 body:
   - type: textarea
     id: question
@@ -22,7 +18,8 @@ body:
   - type: input
     id: version
     attributes:
-      label: tessoa version / 版本
-      placeholder: "0.15.0"
+      label: Version and OS / 版本与系统
+      description: The version is in the command palette under About → Version. / 版本号在命令面板的「关于 → 版本」里。
+      placeholder: "0.15.0, Windows 11"
     validations:
       required: false

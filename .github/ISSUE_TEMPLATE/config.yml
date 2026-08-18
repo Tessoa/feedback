@@ -1,6 +1,12 @@
 # 关掉空白 Issue：反馈必须走模板，保证版本号 / 系统 / 复现步骤这三样不缺。
 blank_issues_enabled: false
 contact_links:
+  - name: 💬 Ask a question / 使用问题
+    url: https://github.com/Tessoa/feedback/discussions/new?category=q-a
+    about: Where a feature lives, what a setting does, anything the docs left unclear.
+  - name: 💡 Share a rough idea / 还没想清楚的设想
+    url: https://github.com/Tessoa/feedback/discussions/new?category=ideas
+    about: Not sure it should be built yet? Talk it over here first.
   - name: 📖 Read this first / 提交前先看
     url: https://github.com/Tessoa/feedback/blob/main/README.md
     about: Search the existing issues, and have your version number and steps to reproduce ready.
